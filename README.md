@@ -1,0 +1,1 @@
+# niseko-blog
