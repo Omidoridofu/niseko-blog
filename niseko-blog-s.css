@@ -1,0 +1,309 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    margin:0;
+    padding:0;
+    overflow-x: hidden;
+    background-color:white;
+}
+.border{
+    margin:20px auto;
+}
+h1{
+    font-family:"bold";
+}
+p,a{
+    font-family:"normal";
+}
+a,h1,p{
+    text-decoration: none;
+    color:rgb(61, 61, 61);
+    letter-spacing: 1px;
+}
+@media screen and (max-width: 1000px){
+    header{
+        width:100%;
+        border-bottom:2px solid #bbbbbb;
+        height:90px;
+        background-color:#eee5f0;
+    }
+    #header1{
+        text-align:center;
+    }
+    #header1 img{
+        width:110px;
+        
+    }
+    #header-access{
+        display:none;
+    }
+    #header-btn-ct{
+        display:none;
+    }
+    #nav-bar3{
+        display:none;
+    }
+    /* メイン */
+    main{
+        width:100%;
+    }
+    /* ハンバーガー */
+    .header__inner {
+        margin: 0;
+    
+        width: 100%;
+      }
+      .header li {
+        list-style-type: none;
+        margin-top: 30px;
+      }
+      
+      .sideMenu {
+        background-color: #fff;
+        height: 100vh;
+        overflow-y: auto;
+        padding-top: 56px;
+        position: fixed;
+        right: -200px;
+        transition: all 0.6s;
+        top: 0;
+        width: 200px;
+        z-index: 200;
+      }
+      
+      .hamburger {
+        cursor: pointer;
+        height: 56px;
+        position: fixed;
+        right: 20px;
+        top: 0;
+        width: 56px;
+        z-index: 300;
+      }
+      .hamburger span {
+        background-color: #111;
+        height: 5px;
+        left: 11px;
+        position: absolute;
+        transition: all 0.6s;
+        width: 30px;
+      }
+      .hamburger__lineTop {
+        top: 40px;
+      }
+      .hamburger__lineCenter {
+        top: 49px;
+      }
+      .hamburger__lineBottom {
+        top: 58px;
+      }
+      .overlay {
+        background-color: #000;
+        cursor: pointer;
+        height: 100vh;
+        left: 0;
+        opacity: 0;
+        position: fixed;
+        top: 0;
+        transition: all 0.6s;
+        visibility: hidden;
+        width: 100vw;
+        z-index: 100;
+      }
+      /* メニューが開いた時のCSS */
+      .nav-open .sideMenu {
+        background-color: #fff;
+        right: 0;
+      }
+      .nav-open .hamburger__lineTop {
+        top: 26px;
+        transform: rotate(45deg);
+      }
+      .nav-open .hamburger__lineCenter {
+        left: 50%;
+        width: 0;
+      }
+      .nav-open .hamburger__lineBottom {
+        top: 26px;
+        transform: rotate(-45deg);
+      }
+      .nav-open .overlay {
+        opacity: 0.8;
+        visibility: visible;
+      }
+      section {
+        margin: 0 auto 200px;
+        text-align: center;
+        width: 80%;
+      }
+      
+      nav{
+        text-align: center;
+      }
+    
+      .logo-img{
+        width:300px;
+      }
+      .menu-img{
+        height:80px;
+        padding:10px 0;
+      }
+      nav i{
+        font-size:30px;
+        float: left;
+        margin-left:20px;
+      }
+      .sideMenu :hover{
+        opacity:0.4;
+        transition:0.5s;
+      }
+      .sideMenu a{
+        transition:0.5s;
+      }
+      .menu-indi{
+          margin:20px 0;
+      }
+      .menu-indi li{
+          font-weight:bold;
+      }
+      /* ブログコンテント */
+      #blog-header{
+        width:100%;
+        height:200px;
+        
+        text-align:center;
+        background-image: url(img-header-blog.jpg);
+        background-size: cover;
+        position:relative;
+    }
+    #blog-header h1{
+        letter-spacing:2px;
+        font-size:20px;
+        color:white;
+        position:absolute;
+        left:50%;
+        top:50%;
+        transform:translate(-50%,-50%);
+        line-height:40px;
+        width:100%;
+    }
+    /*  */
+    #blog-body{
+        width:100%;
+        margin:0 auto;
+    }
+    
+    #blog-left{
+        width:95%;
+        margin:0 auto;
+    }
+    #blog-count{
+        font-size:16px;
+        width:97%;
+        border-bottom:1px solid rgb(46, 46, 46);
+        height:30px;
+        margin:10px auto 0;
+    }
+    .blog-pair{
+        width:100%;
+        text-align:center;
+        margin:20px　0;
+        height:auto;
+        padding:20px 0;
+    }
+    .blog-indi{
+        display:inline-block;
+        width:40%;
+    
+        margin-right:20px;
+        text-align:left;
+        vertical-align:top;
+        padding:20px　0;
+    }
+    .blog-date{
+        font-size:10px;
+        background-color:rgb(139, 209, 206);
+        padding:5px 10px;
+        width:80px;
+        color:white;
+        margin-top:-6px;
+    }
+    .blog-title{
+        font-size:21px;
+        margin-top:10px;
+    }
+    .blog-indi img{
+        width:100%;
+    }
+    .blog-text{
+        font-size:13px;
+        margin-top:6px;
+        width:95%;
+        display: -webkit-box;
+      -webkit-box-orient: vertical;
+      -webkit-line-clamp: 3;
+      overflow: hidden;
+    }
+    
+    /*  */
+    #blog-right{
+        width:100%;
+    
+        background-color:rgba(139, 209, 206, 0.13);
+        padding:0 auto;
+        margin-top:20px;
+    }
+    #blog-popular{
+        width:100%;
+        margin-top:20px;
+        text-align:center;
+    }
+    #blog-popular h1{
+        font-size:18px;
+    }
+    .blog-popular-indi{
+        width:32%;
+        height:170px;
+        margin:20px 0;
+        display:inline-block;
+        vertical-align:top;
+    }
+    .blog-popular-indi img{
+        width:100%;
+        border:#EBEBEB solid 1px;
+    }
+    .blog-popular-indi a{
+        font-size:14px;
+    }
+    .blog-banner{
+        height:100px;
+        border:1px solid;
+        width:95%;
+        margin:5px auto;
+    }
+    #blog-twitter{
+       display:none;
+    }
+    /*  */
+    #tsugi{
+        width:100%;
+        height:40px;
+     
+        text-align:center;
+    }
+    #tsugi a{
+        line-height:40px;
+        border:1px solid gray;
+        padding:3px 10px;
+        background-color:rgba(128, 128, 128, 0.197);
+ 
+    }
+    /* footer */
+    footer{
+        width:100%;
+        height:400px;
+        background-color:rgba(128, 128, 128, 0.259);
+    }
+}
